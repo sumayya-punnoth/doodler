@@ -1,0 +1,17 @@
+body {
+  font-family: sans-serif;
+  text-align: center;
+  background: #f0f0f0;
+  margin: 0;
+  padding: 20px;
+}
+
+.toolbar {
+  margin-bottom: 10px;
+}
+
+canvas {
+  border: 2px solid #000;
+  background: #fff;
+  cursor: crosshair;
+}

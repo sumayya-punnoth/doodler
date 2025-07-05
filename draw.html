@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Coloring App</title>
+  <link rel="stylesheet" href="style2.css">
+</head>
+<body>
+  <div id = "welcome">
+    <h1>WELCOME TO DOODLER</h1>
+    <button id = "startBtn">Start</button>
+  </div>
+
+  <div id = "levels" style = "display: none;">
+    <h1>LEVELS</h1>
+    <button id = "level1">1</button>
+    <button id = "level2">2</button>
+    <button id = "level3">3</button>
+  </div>
+
+  <div id="canvasScreen" style="display: none;">
+    <div class="toolbar">
+      <label>Color:</label>
+      <input type="color" id="color" value="#ff0000">
+
+      <label>Brush Size:</label>
+      <input type="range" id="brushSize" min="1" max="20" value="5">
+
+      <button id="clear">Clear</button>
+      <div id="points">Points: 100</div>
+    </div>
+
+    <canvas id="drawingCanvas" width="600" height="600"></canvas>
+  </div>
+
+  <script src="script2.js"></script>
+</body>
+</html>
