@@ -2,8 +2,13 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Coloring App</title>
-  <link rel="stylesheet" href="style2.css">
+  <title>Doodler</title>
+  <link href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Luckiest+Guy&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="draw.css">
 </head>
 <body>
   <div id = "welcome">
@@ -13,9 +18,16 @@
 
   <div id = "levels" style = "display: none;">
     <h1>LEVELS</h1>
-    <button id = "level1">1</button>
-    <button id = "level2">2</button>
-    <button id = "level3">3</button>
+    <button id="level1">1</button>
+    <button id="level2">2</button>
+    <button id="level3">3</button>
+    <button id="level4">4</button>
+    <button id="level5">5</button>
+    <button id="level6">6</button>
+    <button id="level7">7</button>
+    <button id="level8">8</button>
+    <button id="level9">9</button>
+    <button id = "backStart">Back</button>
   </div>
 
   <div id="canvasScreen" style="display: none;">
@@ -28,11 +40,18 @@
 
       <button id="clear">Clear</button>
       <div id="points">Points: 100</div>
+      <button id = "backLevel">Back</button>
     </div>
 
     <canvas id="drawingCanvas" width="600" height="600"></canvas>
   </div>
 
-  <script src="script2.js"></script>
+  <div id = "mazeGen" style = "display: none;">
+    <h1>Find the way from Start to Finish!</h1>
+    <div id="maze"></div>
+    <button id = "backLevel1">Back</button>
+  </div>
+
+  <script src="draw.js"></script>
 </body>
 </html>
